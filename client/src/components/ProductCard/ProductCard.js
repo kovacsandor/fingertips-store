@@ -1,21 +1,17 @@
-import { Question } from "../../icons/Question";
 import { Button } from "../Button";
 import { Card } from "../Card";
 import { addItem } from "../../strore";
 import { useDispatch } from "react-redux";
 import { formatPrice } from "../../utils";
+import { ProductCardDetails } from "./ProductCardDetails";
 
-export const ProductCard = ({ id, imageUrl, name, price }) => {
+export const ProductCard = ({ product }) => {
+  const { id, imageUrl, name, price } = product
   const dispatch = useDispatch();
   return (
     <Card>
       <div className="flex flex-col gap-1">
-        <div
-          className="bg-fingertips-steel p-1 rounded-full w-fit cursor-pointer absolute right-2 top-2"
-          onClick={() => alert(id)}
-        >
-          <Question className="fill-fingertips-light-gray" />
-        </div>
+        <ProductCardDetails product={product}/>
         <img src={imageUrl} height={400} width={600} alt="product" />
         <div
           className="whitespace-nowrap overflow-ellipsis overflow-hidden"

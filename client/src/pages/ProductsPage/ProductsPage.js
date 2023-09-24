@@ -10,7 +10,7 @@ export const ProductsPage = () => {
       {query.data && (
         <List>
           {query.data.map((product) => {
-            return <ProductCard key={product.id} {...product} />;
+            return <ProductCard key={product.id} product={product} />;
           })}
         </List>
       )}
