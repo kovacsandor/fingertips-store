@@ -1,7 +1,11 @@
-export const Main = () => {
+import { Container } from "../Container";
+
+export const Main = ({ children }) => {
     return (
       <main className="flex-grow">
-        Main
+        <Container>
+          { children }
+        </Container>
       </main>
     );
   }

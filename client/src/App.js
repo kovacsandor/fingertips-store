@@ -1,9 +1,9 @@
-import { PageLayout } from "./components"
+import { ProductsPage } from "./pages/ProductsPage";
 
 export const App = () => {
   return (
     <>
-      <PageLayout/>
+      <ProductsPage/>
     </>
   );
-}
+};

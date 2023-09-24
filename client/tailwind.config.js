@@ -8,6 +8,7 @@ module.exports = {
       'fingertips-dark-blue': '#1f1e38',
       'fingertips-red': '#e60001',
       'fingertips-steel': '#adb7bf',
+      'fingertips-light-gray': '#fcfcfc',
     },  
     extend: {},
   },
